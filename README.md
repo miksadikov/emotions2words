@@ -9,7 +9,7 @@ Currently **only Russian alphabet** is supported.
 The video below shows how this happens:  
 ![demonstration](media/demonstration.gif)  
 
-Full video can be viewed at the [link](https://disk.yandex.ru/i/ptwmZaJfmPGSiw)
+Full video can be viewed at this [link.](https://disk.yandex.ru/i/ptwmZaJfmPGSiw)
 
 **One part** of software responsible for emotion recognition uses **Python** and **OpenVINO toolkit**. [OpenVINO-EmotionRecognition project](https://github.com/PINTO0309/OpenVINO-EmotionRecognition) was taken as a basis. I had to tweak it a little to work with the latest version of OpenVINO.  
 
@@ -34,6 +34,8 @@ How to run software:
  - run virtual keyboard with sudo and choose tty1 port.  
   
   
+  
+### Russian  
 
 Данный проект задумывался как некое вспомогательное приспособление, позволяющее полностью парализованным (и одновременно с этим - немым) людям набирать текст на компьютере и тем самым "общаться" с окружающими.  
 Набор текста на компьютере осуществляется с помощью распознавания эмоций. В настоящее время поддерживается только русский алфавит.  
