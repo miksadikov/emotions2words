@@ -63,7 +63,7 @@ MainWindow::MainWindow(QWidget* parent)
       {ui->pushButton_SLASH_LR, "\""}, {ui->pushButton_LESS, "<"},
       {ui->pushButton_MORE, ">"},      {ui->pushButton_PLUS, "+"},
       {ui->pushButton_PERCENT, "%"},   {ui->pushButton_EQUAL, "="},
-      {ui->pushButton_SMILE, ":-("},   {ui->pushButton_SADNES, ":-)"},
+      {ui->pushButton_SADNES, ":-("},   {ui->pushButton_SMILE, ":-)"},
   };
 
   m_RowsVector.append(m_Row1Vector);
@@ -136,7 +136,6 @@ void MainWindow::scrollRows() {
         ui->lineEdit->setText(ui->lineEdit->text() + item.second);
         HighlightLetter(item.first);
         m_Emotion = {""};
-        break;
       }
       items_counter++;
     }
