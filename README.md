@@ -1,10 +1,15 @@
-# Emotions2Words  
+# Emotions2Words
+
+*Описание на русском см. ниже.  
 
 This project was conceived as a kind of auxiliary device that allows **completely paralyzed people** to type text on a computer and thereby communicate with others.  
 Typing on a computer is carried out using **emotion recognition**.  
 
-The video below shows how this happens (video coming soon).  
 Currently **only Russian alphabet** is supported.  
+The video below shows how this happens:  
+![demonstration](media/demonstration.gif)  
+
+Full video can be viewed at the [link](https://disk.yandex.ru/i/ptwmZaJfmPGSiw)
 
 **One part** of software responsible for emotion recognition uses **Python** and **OpenVINO toolkit**. [OpenVINO-EmotionRecognition project](https://github.com/PINTO0309/OpenVINO-EmotionRecognition) was taken as a basis. I had to tweak it a little to work with the latest version of OpenVINO.  
 
@@ -26,4 +31,18 @@ How to run software:
 
  - run socat: `sudo socat -d -d pty,link=/dev/tty0,raw,echo=0 pty,link=/dev/tty1,raw,echo=0`
  - run emotion recognition: `sudo python ./emotion-recognition/main.py`
- - run virtual keyboard with sudo and choose tty1 port.
+ - run virtual keyboard with sudo and choose tty1 port.  
+  
+  
+
+Данный проект задумывался как некое вспомогательное приспособление, позволяющее полностью парализованным (и одновременно с этим - немым) людям набирать текст на компьютере и тем самым "общаться" с окружающими.  
+Набор текста на компьютере осуществляется с помощью распознавания эмоций. В настоящее время поддерживается только русский алфавит.  
+
+Часть программного обеспечения, отвечающая за распознавание эмоций, написана на Python и использует фреймворк OpenVINO от Intel. За основу был взят проект [OpenVINO-EmotionRecognition project](https://github.com/PINTO0309/OpenVINO-EmotionRecognition),
+Пришлось его немного подправить для работы с последней версией OpenVINO.  
+Вуртуальная клавиатура написана на Qt/C++  
+
+
+ 
+ 
+ 
